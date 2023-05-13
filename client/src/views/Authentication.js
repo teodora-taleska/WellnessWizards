@@ -2,7 +2,9 @@ import React from "react";
 
 const Authentication = () => {
     return(
-        <div>Authentication</div>
+        <div>
+        Implement links to sign in and sign up
+        </div>
     )
 }
 
