@@ -38,6 +38,7 @@ import CHeader from './components/connections/ConnectionsHeader';
 import PersonalTrainers from './components/connections/PersonalTrainers';
 import Physiotherapists from './components/connections/Physiotherapists';
 import WorkoutBuddies from './components/connections/WorkoutBuddies';
+import Home from './views/Home';
 
 // React Router Dom Outlet 
 /*
@@ -85,6 +86,10 @@ const router = createBrowserRouter([
   {
     path: '/sign-up',
     element: <SignUp/>
+  },
+  {
+    path: '/home',
+    element: <Home/>
   },
   {
     path: '/my-plans-hp',

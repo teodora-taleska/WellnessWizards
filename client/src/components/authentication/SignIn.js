@@ -19,10 +19,10 @@ const SignIn = () => {
                 </div>
 
 
-                <button>Sign in
+                <Link to='/home'><button>Sign in
                 <i className="fa fa-arrow-right" aria-hidden="true"></i>
 
-                </button>
+                </button></Link>
 
                 <h6>Don't have an account? 
                     <Link to='/sign-up'><s>Sign up</s></Link>

@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FormsHeader = () => {
     return(
         <div className="forms-header">
-            <button></button>
-            <h4> FORMS </h4>
+            <Link to='/home'><i className="fa fa-long-arrow-left" aria-hidden="true"></i></Link>
+            
         </div>
     ) 
 }
