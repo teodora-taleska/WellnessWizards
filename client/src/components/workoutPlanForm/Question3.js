@@ -5,19 +5,27 @@ const Q3 = () => {
     return(
         <div className="q">
            <h4 className="header">NEW WORKOUT PLAN</h4>
-            <p>In what interval is your age?</p>
+            <p>What is your prefered workout style?</p>
             <form className="form">
                 <div>
-                <input type="radio" value="Below 21" name="gender" /> Below 21
+                <input type="radio" value="HIIT" name="gender" /> HIIT (High intenstiy interval)
 
                 </div>
                 <div>
-                <input type="radio" value="22-56" name="gender" /> 22-56 
+                    <input type="radio" value="Strength" name="gender" /> Strength
                 </div>
                 <div>
-                <input type="radio" value="Above 56" name="gender" /> Above 56
+                <input type="radio" value="Cardio" name="gender" /> Cardio
                 </div>
-                
+                <div>
+                    <input type="radio" value="Yoga" name="gender" /> Yoga
+                </div>
+                <div>
+                    <input type="radio" value="Pilates" name="gender" /> Pilates
+                </div>
+                <div>
+                    <input type="radio" value="Dance" name="gender" /> Dance
+                </div>
                 
             </form>
             <Link to='/workout-plan-form/q2'><button className="b2">BACK</button></Link>

@@ -18,6 +18,9 @@ import Q1 from './components/workoutPlanForm/Question1';
 import Q2 from './components/workoutPlanForm/Question2';
 import Q3 from './components/workoutPlanForm/Question3';
 import Q4 from './components/workoutPlanForm/Question4';
+import Q5 from './components/workoutPlanForm/Question5';
+import Q6 from './components/workoutPlanForm/Question6';
+
 
 import NutritionPlanForm from './views/NutritionPlanForm';
 import NQ1 from './components/nutritionPlanForm/NQ1';
@@ -162,7 +165,16 @@ const router = createBrowserRouter([
       {
         path: '/workout-plan-form/q4',
         element: <Q4 />
-      }
+        },
+        
+        {
+            path: '/workout-plan-form/q5',
+            element: <Q5 />
+        },
+        {
+            path: '/workout-plan-form/q6',
+            element: <Q6 />
+        }
     ]
   },
   {
