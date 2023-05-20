@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../images/logo2.png";
 
 const Authentication = () => {
     return(
         <div className="auth">
             <div className="hp">
                 <div className="logo">
-                    <img src="./icons8-wellness-64.png" />
+                   
+                     <img src={logo} alt="Logo" className="logo" />
+                    
                     <h3>Welcome to Wellness Wizards</h3>
                     <p>We will be happy to help you on your fitness journey.</p>
                 </div>
