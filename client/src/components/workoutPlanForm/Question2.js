@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import workout_pic_2 from "../../images/workout_pic_2.jpg";
+import workout_pic_2 from "../../images/boy1.jpg";
 const Q2 = () => {
     return(
         <div className="q">

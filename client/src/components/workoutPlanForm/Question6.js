@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import workout_pic_6 from "../../images/workout_pic_6.jpg";
+import workout_pic_6 from "../../images/workout_pic_5.jpg";
 
 const Q6 = () => {
     return (
         <div className="q">
             <h4 className="header">NEW WORKOUT PLAN</h4>
-            <p>What is your weight goal?</p>
+            <p>What is your goal weight?</p>
             <form className="form">
                 <div>
                     <input type="number" name="weight" />
