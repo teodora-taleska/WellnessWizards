@@ -1,27 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import workout_pic_2 from "../../images/workout_pic_2.jpg";
 const Q2 = () => {
     return(
         <div className="q">
             <h4 className="header">NEW WORKOUT PLAN</h4>
-            <p>In what interval is your age?</p>
+            <p>What is your gender?</p>
             <form className="form">
                 <div>
-                <input type="radio" value="Below 21" name="gender" /> Below 21
+                <input type="radio" value="Male" name="gender" /> Male
 
                 </div>
                 <div>
-                <input type="radio" value="22-56" name="gender" /> 22-56 
+                <input type="radio" value="Female" name="gender" /> Female  
                 </div>
                 <div>
-                <input type="radio" value="Above 56" name="gender" /> Above 56
+                <input type="radio" value="Nonbinary" name="gender" /> Nonbinary
                 </div>
                 
                 
             </form>
             <Link to='/workout-plan-form/q1'><button className="b2">BACK</button></Link>
             <Link to='/workout-plan-form/q3'><button className="b1">NEXT</button></Link>
+            <div className="img">
+                <img src={workout_pic_2} alt="Workout pic 2" className="img2" />
+            </div>
         </div>
     ) 
 }
