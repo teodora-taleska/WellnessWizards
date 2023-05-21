@@ -31,7 +31,7 @@ const NQ6 = () => {
                 </div>                
             </form>
             <Link to='/nutrition-plan-form/nq5'><button className="b2">BACK</button></Link>
-            <Link to='/nutrition-page'><button className="b1">SUMBIT</button></Link>           
+            <Link to='/'><button className="b1">SUMBIT</button></Link>           
         </div>
     ) 
 }

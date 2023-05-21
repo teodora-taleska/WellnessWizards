@@ -8,7 +8,7 @@ const MyPlansHP = () => {
   const currentDay = currentDate.getDay();
 
   // Create an array of weekdays
-  const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  //const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
   // Generate the calendar items
   const calendarItems = [];
