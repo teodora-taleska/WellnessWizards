@@ -144,6 +144,10 @@ $link-color: rgba(111, 205, 210, 0.637);
                 color: white;
             }
 
+            i {
+                color: white;
+            }
+
             .acc-icon:hover {
                 color: $second-main-color;
                 text-shadow: 1px 1px 5px rgba(245, 245, 245, 0.689);
@@ -227,6 +231,7 @@ $link-color: rgba(111, 205, 210, 0.637);
             }
         }
 
+        // Forms - questions 
         .q {
             color: $text;
             display: flex;
@@ -263,7 +268,7 @@ $link-color: rgba(111, 205, 210, 0.637);
                 right: 7%;
             }
 
-            .b1:hover, .b2:hover {
+            .b1:hover, .b2:hover, .s1:hover, .s2:hover {
                 color: white;
                 background-color: $second-main-color;
                 border: none;
@@ -279,6 +284,25 @@ $link-color: rgba(111, 205, 210, 0.637);
                 bottom: 40px;
                 left: 7%;
             }
+
+            .popup{
+                background-color: #11212189;
+                width: 70%;
+                padding: 17px;
+                border-radius: 10px;
+                box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.588);
+                text-align: center;
+            }
+
+            .s1, .s2{
+                width: 30%;
+                padding: 15px;
+                margin: 10px;
+                position: relative;
+                margin-top: 30px;
+                color: $second-main-color;
+            }
+            
         }
     }
 

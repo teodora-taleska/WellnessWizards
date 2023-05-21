@@ -45,6 +45,8 @@ import PersonalTrainers from './components/connections/PersonalTrainers';
 import Physiotherapists from './components/connections/Physiotherapists';
 import WorkoutBuddies from './components/connections/WorkoutBuddies';
 import Home from './views/Home';
+import SubmitN from './components/nutritionPlanForm/Submit';
+import SubmitW from './components/workoutPlanForm/SubmitW';
 
 // React Router Dom Outlet 
 /*
@@ -177,6 +179,10 @@ const router = createBrowserRouter([
         {
             path: '/workout-plan-form/q6',
             element: <Q6 />
+        },
+         {
+            path: '/workout-plan-form/submit',
+            element: <SubmitW />
         }
     ]
   },
@@ -211,6 +217,10 @@ const router = createBrowserRouter([
       {
         path: '/nutrition-plan-form/nq6',
         element: <NQ6 />
+      },
+      {
+        path:'/nutrition-plan-form/submit',
+        element: <SubmitN />
       }
     ]
   },

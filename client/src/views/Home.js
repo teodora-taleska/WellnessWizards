@@ -5,7 +5,7 @@ const Home = () => {
     return(
         <div className="home">
             <div className="acc-icon">
-                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <Link to="/my-plans-hp/my-account"><i class="fa fa-user-circle" aria-hidden="true"></i></Link>
             </div>
             <Link to='/my-plans-hp'><button>MY PLANS</button></Link>
             <Link to='/workout-plan-form'><button>NEW WORKOUT PLAN</button></Link>

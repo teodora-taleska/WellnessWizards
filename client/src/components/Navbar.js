@@ -13,7 +13,7 @@ const Navbar = () => {
                 <FontAwesomeIcon icon={faHeartbeat} />
             </Link>
 
-            <Link to="../home">
+            <Link to="../my-plans-hp">
                 <FontAwesomeIcon icon={faHome} />
             </Link>
             <Link className="navbar-link" to="../my-plans-hp/connections">
