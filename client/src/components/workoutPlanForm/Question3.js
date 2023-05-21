@@ -32,9 +32,7 @@ const Q3 = () => {
             </form>
             <Link to='/workout-plan-form/q2'><button className="b2">BACK</button></Link>
             <Link to='/workout-plan-form/q4'><button className="b1">NEXT</button></Link>
-            <div className="img">
-                <img src={workout_pic_3} alt="Workout pic 3" className="img3" />
-            </div>
+            
         </div>
        
        
