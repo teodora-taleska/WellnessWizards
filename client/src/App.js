@@ -25,9 +25,12 @@ import Q6 from './components/workoutPlanForm/Question6';
 import NutritionPlanForm from './views/NutritionPlanForm';
 import NQ1 from './components/nutritionPlanForm/NQ1';
 import NQ2 from './components/nutritionPlanForm/NQ2';
-
+import NQ3 from './components/nutritionPlanForm/NQ3';
 import NQ4 from './components/nutritionPlanForm/NQ4';
-import NQ3 from './components/nutritionPlanForm/NQ03';
+import NQ5 from './components/nutritionPlanForm/NQ5';
+import NQ6 from './components/nutritionPlanForm/NQ6';
+
+
 import AccountPage from './components/myPlans/AccountPage';
 import Calendar from './components/myPlans/Calendar';
 import AnalyticsPage from './components/myPlans/AnalyticsPage';
@@ -200,6 +203,14 @@ const router = createBrowserRouter([
       {
         path: '/nutrition-plan-form/nq4',
         element: <NQ4 />
+      },
+      {
+        path: '/nutrition-plan-form/nq5',
+        element: <NQ5 />
+      },
+      {
+        path: '/nutrition-plan-form/nq6',
+        element: <NQ6 />
       }
     ]
   },

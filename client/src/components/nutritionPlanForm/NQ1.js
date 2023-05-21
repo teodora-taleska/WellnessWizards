@@ -5,7 +5,7 @@ const NQ1 = () => {
     return(
         <div className="q">
             <h4 className="header">NEW NUTRITION PLAN</h4>
-            <p>In what interval is your age?</p>
+            <p>In what is your age?</p>
             <form className="form">
                 <div>
                 <input type="radio" value="Below 21" name="gender" /> Below 21
@@ -20,7 +20,7 @@ const NQ1 = () => {
                 
                 
             </form>
-            <Link to='/workout-plan-form/q2'><button className="b1">NEXT</button></Link>
+            <Link to='/nutrition-plan-form/nq2'><button className="b1">NEXT</button></Link>
         </div>
     ) 
 }
