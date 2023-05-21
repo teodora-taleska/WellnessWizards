@@ -1,21 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const NQ4 = () => {
+const NQ3 = () => {
     return(
         <div className="q">
             <h4 className="header">NEW NUTRITION PLAN</h4>
-            <p>Provide your curret height:</p>
+            <p>Current weight:</p>
             <form className="form">
                 <div>
-
+                    
                     <input type="number" name="weight" />
 
                 </div>                
             </form>
-            <Link to='/nutrition-plan-form/nq3'><button className="b2">BACK</button></Link>
-            <Link to='/nutrition-plan-form/nq5'><button className="b1">NEXT</button></Link>
+            <Link to='/nutrition-plan-form/nq2'><button className="b2">BACK</button></Link>
+            <Link to='/nutrition-plan-form/nq4'><button className="b1">NEXT</button></Link>
         </div>
     ) 
 }
 
-export default NQ4
+export default NQ3

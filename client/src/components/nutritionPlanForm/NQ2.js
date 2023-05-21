@@ -4,22 +4,22 @@ const NQ2 = () => {
     return(
         <div className="q">
             <h4 className="header">NEW NUTRITION PLAN</h4>
-            <p>In what interval is your age?</p>
+            <p>Select gender:</p>
             <form className="form">
                 <div>
-                    <input type="radio" value="Below 21" name="gender" /> Below 21  
+                    <input type="radio" value="Male" name="gender" /> Below 21  
                 </div>
                 <div>
-                    <input type="radio" value="22-56" name="gender" /> 22-56 
+                    <input type="radio" value="Female" name="gender" /> 22-56 
                 </div>
                 <div>
-                    <input type="radio" value="Above 56" name="gender" /> Above 56
+                    <input type="radio" value="Other" name="gender" /> Above 56
                 </div>
                 
                 
             </form>
-            <Link to='/workout-plan-form/q1'><button className="b2">BACK</button></Link>
-            <Link to='/workout-plan-form/q3'><button className="b1">NEXT</button></Link>
+            <Link to='/nutrition-plan-form/nq1'><button className="b2">BACK</button></Link>
+            <Link to='/nutrition-plan-form/nq3'><button className="b1">NEXT</button></Link>
         </div>
     ) 
 }
