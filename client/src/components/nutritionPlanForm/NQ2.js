@@ -7,13 +7,13 @@ const NQ2 = () => {
             <p>Select gender:</p>
             <form className="form">
                 <div>
-                    <input type="radio" value="Male" name="gender" /> Below 21  
+                    <input type="radio" value="Male" name="gender" /> Male  
                 </div>
                 <div>
-                    <input type="radio" value="Female" name="gender" /> 22-56 
+                    <input type="radio" value="Female" name="gender" /> Female 
                 </div>
                 <div>
-                    <input type="radio" value="Other" name="gender" /> Above 56
+                    <input type="radio" value="Other" name="gender" /> Other
                 </div>
                 
                 

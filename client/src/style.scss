@@ -149,6 +149,21 @@ $link-color: rgba(111, 205, 210, 0.637);
                 text-shadow: 1px 1px 5px rgba(245, 245, 245, 0.689);
             }
 
+            .calendar-item {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 30px;
+                font-weight: bold;
+            }
+            
+            .current-date {
+                background-color: green;
+                color: white;
+            }
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -156,7 +171,7 @@ $link-color: rgba(111, 205, 210, 0.637);
             height: 100vh;
             background-color: $main-color;
             flex-direction: column;
-
+            
 
             button {
                 color: $second-main-color;

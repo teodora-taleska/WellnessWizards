@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import nutricion_1 from "../../images/nutrition1.jpg";
 
 const NQ1 = () => {
     return(
@@ -21,6 +22,9 @@ const NQ1 = () => {
                 
             </form>
             <Link to='/nutrition-plan-form/nq2'><button className="b1">NEXT</button></Link>
+            <div className="img">
+                <img src={nutricion_1} alt="Nutritiot pic 1" className="img1" />
+            </div>
         </div>
     ) 
 }
