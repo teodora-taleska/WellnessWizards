@@ -1,3 +1,4 @@
+
 // DarkSlateGray
 $main-color: #273939;
 $second-main-color: #182323;
@@ -110,7 +111,7 @@ $link-color: rgba(111, 205, 210, 0.637);
                         width: 285px;
                         height: auto;
                         position: relative;
-                        left: 32%;
+                        left: -14%;
                         right: 20%;
                         margin-bottom: 30px;
                     }
@@ -155,7 +156,7 @@ $link-color: rgba(111, 205, 210, 0.637);
             height: 100vh;
             background-color: $main-color;
             flex-direction: column;
-
+            
 
             button {
                 color: $second-main-color;
@@ -170,6 +171,36 @@ $link-color: rgba(111, 205, 210, 0.637);
                 border: none;
                 border-radius: 5px;
                 box-shadow: 1px 1px 4px rgba(142, 142, 142, 0.288);
+            }
+        }
+        //MY PLANS
+        .my-plans-hp{
+            .calendar-item {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 30px;
+                font-weight: bold;
+            }
+            
+            .current-date {
+                background-color: green;
+                color: white;
+            }
+
+            .acc-icon {
+                font-size: 35px;
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                color: white;
+            }
+
+            .acc-icon:hover {
+                color: $second-main-color;
+                text-shadow: 1px 1px 5px rgba(245, 245, 245, 0.689);
             }
         }
         // WORKOUT & NUTRITION PLAN FORM
@@ -287,32 +318,78 @@ $link-color: rgba(111, 205, 210, 0.637);
     }
 
     .img1 {
-        width: 535px;
+        width: 279px;
         height: auto;
     }
 
     .img2 {
-        width: 319px;
+        width: 279px;
         height: auto;
     }
 
     .img3 {
-        width: 550px;
+        width: 278px;
         height: auto;
     }
 
     .img4 {
-        width: 340px;
+        width: 278px;
         height: auto;
     }
 
     .img5 {
-        width: 630px;
+        width: 272px;
         height: auto;
     }
 
     .img6 {
-        width: 337px;
+        width: 280px;
         height: auto;
+    }
+
+    .account-page {
+        color: $text;
+        height: 95vh;
+        background-color: $main-color;
+    }
+
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        text-align: center;
+    }
+
+    .account-pic {
+        display: block;
+        width: 100px;
+        height: 100px;
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .upload-pic {
+        margin-top: 10px;
+    }
+
+    .name-surname,
+    .location,
+    .age,
+    .challenges {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #f2f2f2;
+    }
+
+    .navbar-link {
+        margin-right: 10px;
     }
 }
