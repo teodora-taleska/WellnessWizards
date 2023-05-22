@@ -1,20 +1,15 @@
 import React from "react";
 
 const MyPlansHP = () => {
-  // Get the current date
   const currentDate = new Date();
-
-  // Generate the calendar items
   const calendarItems = [];
+  const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
   for (let i = -3; i <= 3; i++) {
-    // Calculate the date for the current item
     const date = new Date();
     date.setDate(currentDate.getDate() + i);
-
-    // Determine if it's the current date
     const isCurrentDate = date.toDateString() === currentDate.toDateString();
 
-    // Create a new calendar item
     const calendarItem = (
       <div
         key={i}
@@ -24,7 +19,6 @@ const MyPlansHP = () => {
       </div>
     );
 
-    // Add the calendar item to the array
     calendarItems.push(calendarItem);
   }
 
@@ -33,7 +27,16 @@ const MyPlansHP = () => {
       <div className="acc-icon">
         <i className="fa fa-user-circle" aria-hidden="true"></i>
       </div>
-      <div className="calendar-row">{calendarItems}</div>
+      <div className="calendar-row">
+        {weekdays.map((weekday, index) => (
+          <div key={index} className="weekday-label">
+            {weekday}
+          </div>
+        ))}
+      </div>
+      <div className="calendar-row">
+        {calendarItems}
+      </div>
       My plans HP
     </div>
   );
