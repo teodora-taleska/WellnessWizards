@@ -8,7 +8,7 @@ const NQ4 = () => {
             <form className="form">
                 <div>
 
-                    <input type="number" name="weight" />
+                    <input type="number" name="height" />
 
                 </div>                
             </form>
