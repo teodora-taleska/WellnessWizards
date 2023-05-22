@@ -4,23 +4,13 @@ import React from "react";
 const NutritionPage = () => {
     return(
         <div className="nutrition-page">
-            <h1>Meal Plans</h1>
- 
-        </div>
-        
-    ) 
-}
-
-export default NutritionPage
-
-           /* <div className="meal-list">
+            <h2>Meal Plans</h2>
+            <div className="meal-list">
                 <div className="meal-item">
-                    <Link to="recipe" className="recipe-link">
                         <div className="meal-card">
                             <h3>Fast and nutritious vegan recipes</h3>
                             <p>.....................</p>
                         </div>
-                    </Link>
                 </div>
                 <div className="meal-item">
                         <div className="meal-card">
@@ -34,4 +24,12 @@ export default NutritionPage
                             <p>Unlocked soon...</p>
                         </div>
                 </div>
-                { Add more workout links as needed }  </div> */
+                {/* Add more workout links as needed */}  </div> 
+        </div>
+        
+    ) 
+}
+
+export default NutritionPage
+
+           /* */
