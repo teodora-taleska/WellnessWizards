@@ -190,32 +190,26 @@ $link-color: rgba(111, 205, 210, 0.637);
         }
         //MY PLANS
         .my-plans-hp{
+            .calendar-row {
+               display: flex;
+               justify-content: center;
+               margin: 30px 0px
+             }
+            
             .calendar-item {
-                display: inline-block;
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                text-align: center;
-                line-height: 30px;
-                font-weight: bold;
+               display: inline-flex;
+               align-items: center;
+               justify-content: center;
+               width: 40px;
+               height: 40px;
+               border-radius: 60%;
+               text-align: center;
+               font-weight: bold;
             }
             
             .current-date {
-                background-color: green;
-                color: white;
-            }
-
-            .acc-icon {
-                font-size: 35px;
-                position: absolute;
-                top: 30px;
-                right: 30px;
-                color: white;
-            }
-
-            .acc-icon:hover {
-                color: $second-main-color;
-                text-shadow: 1px 1px 5px rgba(245, 245, 245, 0.689);
+               background-color: green;
+               color: white;
             }
         }
         // WORKOUT & NUTRITION PLAN FORM
@@ -407,8 +401,6 @@ $link-color: rgba(111, 205, 210, 0.637);
     .navbar-link {
         margin-right: 10px;
     }
-<<<<<<< HEAD
-=======
 
     .workout-page {
         display: flex;
@@ -535,5 +527,4 @@ $link-color: rgba(111, 205, 210, 0.637);
         width: 172px;
         height: auto;
     }
->>>>>>> master
 }

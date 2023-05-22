@@ -4,18 +4,12 @@ const MyPlansHP = () => {
   // Get the current date
   const currentDate = new Date();
 
-  // Get the current day (0-6, where 0 is Sunday and 6 is Saturday)
-  const currentDay = currentDate.getDay();
-
-  // Create an array of weekdays
-  const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-
   // Generate the calendar items
   const calendarItems = [];
-  for (let i = 0; i < 7; i++) {
+  for (let i = -3; i <= 3; i++) {
     // Calculate the date for the current item
     const date = new Date();
-    date.setDate(currentDate.getDate() + i - currentDay);
+    date.setDate(currentDate.getDate() + i);
 
     // Determine if it's the current date
     const isCurrentDate = date.toDateString() === currentDate.toDateString();
@@ -24,7 +18,7 @@ const MyPlansHP = () => {
     const calendarItem = (
       <div
         key={i}
-        className={`calendar-item ${isCurrentDate ? 'current-date' : ''}`}
+        className={`calendar-item ${isCurrentDate ? "current-date" : ""}`}
       >
         {date.getDate()}
       </div>
