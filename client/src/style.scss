@@ -153,6 +153,21 @@ $link-color: rgba(111, 205, 210, 0.637);
                 text-shadow: 1px 1px 5px rgba(245, 245, 245, 0.689);
             }
 
+            .calendar-item {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 30px;
+                font-weight: bold;
+            }
+            
+            .current-date {
+                background-color: green;
+                color: white;
+            }
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -160,7 +175,7 @@ $link-color: rgba(111, 205, 210, 0.637);
             height: 100vh;
             background-color: $main-color;
             flex-direction: column;
-
+            
 
             button {
                 color: $second-main-color;
@@ -176,6 +191,47 @@ $link-color: rgba(111, 205, 210, 0.637);
                 border-radius: 5px;
                 box-shadow: 1px 1px 4px rgba(142, 142, 142, 0.288);
             }
+        }
+        //MY PLANS
+        .my-plans-hp{
+            .calendar-row {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               margin: 30px 0px;
+            }
+              
+            .weekday-label {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               flex: 1;
+               height: 30px;
+               font-weight: bold;
+            }
+              
+            .calendar-item {
+               display: inline-flex;
+               align-items: center;
+               justify-content: center;
+               width: 80px;
+               height: 50px;
+               border-radius: 40%;
+               text-align: center;
+               font-weight: bold;
+               transition: background-color 0.3s;
+            }
+             
+            .calendar-item:hover {
+               background-color: gray;
+               box-shadow: 1px 1px 4px rgba(142, 142, 142, 0.288);
+            }
+              
+            .current-date {
+               background-color: #68ab87;
+               color: white;
+            }           
+              
         }
         // WORKOUT & NUTRITION PLAN FORM
         .plan-form {
@@ -375,7 +431,7 @@ $link-color: rgba(111, 205, 210, 0.637);
         font-size: 18px;
         margin-bottom: 10px;
     }
-
+    //NAVBAR
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -386,7 +442,7 @@ $link-color: rgba(111, 205, 210, 0.637);
     .navbar-link {
         margin-right: 10px;
     }
-
+    //WORKOUT PAGE
     .workout-page {
         display: flex;
         align-items: center;
@@ -476,6 +532,63 @@ $link-color: rgba(111, 205, 210, 0.637);
         border-radius: 5px;
         cursor: pointer;
     }
+    // NUTRITION PAGE
+    .nutrition-page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background-color: $main-color;
+        flex-direction: column;
+
+        .h2 {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            top: 0;
+            left: 10px;
+            color: white;
+        }
+    }
+
+        .meal-card {
+            background-color: white;
+            color: blueviolet;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            margin-bottom: 10px;
+        }
+    
+        .meal-card:hover {
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+    
+        .meal-card:active {
+            background-color: #d9d9d9;
+        }
+    
+    
+        .meal-link {
+            text-decoration: none;
+        }
+    
+        .meal-card-locked {
+            background-color: white;
+            color: darkgray;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            margin-bottom: 10px;
+        }
+    
+    
 
     h2 {
         color: $text;

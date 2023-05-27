@@ -4,28 +4,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faUtensils, faCommenting, faCutlery, faHeartbeat, faLineChart } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
     return(
-        <div className="navbar">
+        <div className="navbar-div">
+            <div className="navbar">
        
             <Link to="../my-plans-hp/analytics">
-                <FontAwesomeIcon icon={faLineChart} />
+                <FontAwesomeIcon className="icon" icon={faLineChart} />
             </Link>
             <Link to="../my-plans-hp/workout-page">
-                <FontAwesomeIcon icon={faHeartbeat} />
+                <FontAwesomeIcon className="icon" icon={faHeartbeat} />
             </Link>
 
             <Link to="../my-plans-hp">
-                <FontAwesomeIcon icon={faHome} />
+                <FontAwesomeIcon className="icon" icon={faHome} />
             </Link>
             <Link className="navbar-link" to="../my-plans-hp/connections">
-                <FontAwesomeIcon icon={faCommenting} />
+                <FontAwesomeIcon className="icon" icon={faCommenting} />
             </Link>
 
             <Link className="navbar-link" to="../my-plans-hp/nutrition-page">
-                <FontAwesomeIcon icon={faCutlery} />
+                <FontAwesomeIcon className="iconLast" icon={faCutlery} />
             </Link>
             
             
         </div>
+        </div>
+        
     ) 
 }
 

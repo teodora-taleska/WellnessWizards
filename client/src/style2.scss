@@ -1,0 +1,60 @@
+// DarkSlateGray
+$main-color: #273939;
+$second-main-color: #182323;
+$form-text: rgba(195, 217, 212, 0.952);
+$text: rgb(239, 235, 235);
+$heading: 'Helvetica', sans-serif;
+$link-color: rgba(111, 205, 210, 0.637);
+
+.app {
+    font-family: 'Times New Roman', Times, serif;
+
+    .container {
+
+        // Calendar page
+        .calendar{
+            background-color: $main-color;
+            color: $text;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: $main-color;
+
+            .calendar-header{
+                font-family: $heading;
+                font-size: 28px;
+                margin-left: 30px;
+                position: absolute;
+                top: -12px;
+                left: 45px;
+            }
+
+        }
+
+        .navbar-div{
+        
+            position: fixed;
+            bottom: 0%;
+
+            .navbar{
+                background-color: $second-main-color;
+                padding: 20px;
+            }
+            .icon{
+                font-size: 20px;
+                padding-right: 50px;
+                color: white;
+            }
+            .iconLast{
+                font-size: 20px;
+                color: white;
+            }
+            .icon:hover, .iconLast:hover{
+                color: rgba(255, 255, 255, 0.708);
+                text-shadow: 2px 2px 5px white;
+            }
+        }
+    }
+
+}

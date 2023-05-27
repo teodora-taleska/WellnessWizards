@@ -11,6 +11,7 @@ import SignUp from './components/authentication/SignUp';
 import Navbar from './components/Navbar';
 import MyPlansHP from './views/MyPlansHP';
 
+import "./style2.scss"
 import "./style.scss"
 import FormsHeader from './components/FormsHeader';
 import WorkoutPlanForm from './views/WorkoutPlanForm';
