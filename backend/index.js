@@ -5,7 +5,9 @@ import cors from "cors";
 import dotenv from "dotenv";
 import morgan from "morgan";
 import helmet from "helmet";
-import path from "path";
+// import path from "path";
+// import { register } from "./controllers/auth.js"
+import router from "./routes/routes.js";
 
 /** CONFIGURATION */
 /** This will include all the middleware configuration
@@ -13,12 +15,19 @@ import path from "path";
  */
 dotenv.config();
 const app = express();
-app.use(express.json);
+
+/** Activate the body parser */
+app.use(express.json());
+
 app.use(helmet());
 app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin"}));
 app.use(morgan("common"));
 app.use(bodyParser.json({ limit: "30mb", extended:true}));
 app.use(cors());
+
+/** ROUTES */
+// We initialize the routes as a middleware
+app.use('/', router);
 
 /** MONGOOSE SETUP */
 const PORT = process.env.PORT || 6001;
@@ -28,3 +37,5 @@ mongoose.connect(process.env.MONGO_URL, {
 }).then (() => {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 }).catch((error) => console.log(`${error} did not connect`))
+
+
