@@ -162,7 +162,7 @@ $link-color: rgba(111, 205, 210, 0.637);
                 line-height: 30px;
                 font-weight: bold;
             }
-            
+
             .current-date {
                 background-color: green;
                 color: white;
@@ -175,7 +175,7 @@ $link-color: rgba(111, 205, 210, 0.637);
             height: 100vh;
             background-color: $main-color;
             flex-direction: column;
-            
+
 
             button {
                 color: $second-main-color;
@@ -193,45 +193,44 @@ $link-color: rgba(111, 205, 210, 0.637);
             }
         }
         //MY PLANS
-        .my-plans-hp{
+        .my-plans-hp {
             .calendar-row {
-               display: flex;
-               align-items: center;
-               justify-content: center;
-               margin: 30px 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 30px 0px;
             }
-              
+
             .weekday-label {
-               display: flex;
-               align-items: center;
-               justify-content: center;
-               flex: 1;
-               height: 30px;
-               font-weight: bold;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+                height: 30px;
+                font-weight: bold;
             }
-              
+
             .calendar-item {
-               display: inline-flex;
-               align-items: center;
-               justify-content: center;
-               width: 80px;
-               height: 50px;
-               border-radius: 40%;
-               text-align: center;
-               font-weight: bold;
-               transition: background-color 0.3s;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 80px;
+                height: 50px;
+                border-radius: 40%;
+                text-align: center;
+                font-weight: bold;
+                transition: background-color 0.3s;
             }
-             
+
             .calendar-item:hover {
-               background-color: gray;
-               box-shadow: 1px 1px 4px rgba(142, 142, 142, 0.288);
+                background-color: gray;
+                box-shadow: 1px 1px 4px rgba(142, 142, 142, 0.288);
             }
-              
+
             .current-date {
-               background-color: #68ab87;
-               color: white;
-            }           
-              
+                background-color: #68ab87;
+                color: white;
+            }
         }
         // WORKOUT & NUTRITION PLAN FORM
         .plan-form {
@@ -286,8 +285,7 @@ $link-color: rgba(111, 205, 210, 0.637);
                 text-shadow: 1px 1px 5px rgba(245, 245, 245, 0.174);
             }
         }
-
-        // Forms - questions 
+        // Forms - questions
         .q {
             color: $text;
             display: flex;
@@ -341,7 +339,7 @@ $link-color: rgba(111, 205, 210, 0.637);
                 left: 7%;
             }
 
-            .popup{
+            .popup {
                 background-color: #11212189;
                 width: 70%;
                 padding: 17px;
@@ -350,7 +348,7 @@ $link-color: rgba(111, 205, 210, 0.637);
                 text-align: center;
             }
 
-            .s1, .s2{
+            .s1, .s2 {
                 width: 30%;
                 padding: 15px;
                 margin: 10px;
@@ -358,7 +356,6 @@ $link-color: rgba(111, 205, 210, 0.637);
                 margin-top: 30px;
                 color: $second-main-color;
             }
-            
         }
     }
 
@@ -459,13 +456,21 @@ $link-color: rgba(111, 205, 210, 0.637);
 
     .workout-card {
         background-color: white;
-        color: blueviolet;
+        color: black;
         padding: 20px;
         border-radius: 10px;
         text-align: center;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         transition: background-color 0.3s ease;
         margin-bottom: 10px;
+        display: flex;
+        align-items: flex-start;
+        width: 300px;
+    }
+
+    .workout-card h3 {
+        height: 60px;
+        padding: 10px;
     }
 
     .workout-card:hover {
@@ -507,8 +512,22 @@ $link-color: rgba(111, 205, 210, 0.637);
     .workout-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start; /* Align items to the left */
         margin-top: 20px;
+    }
+
+    .workout-container h3 {
+        text-align: left; /* Move the title to the left */
+    }
+
+    .workout-container .workout-card {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .workout-container .workout-card .workout-image-container {
+        display: flex;
+        align-items: flex-start;
     }
 
     .workout-details {
@@ -532,6 +551,241 @@ $link-color: rgba(111, 205, 210, 0.637);
         border-radius: 5px;
         cursor: pointer;
     }
+
+    .workout-dropdown {
+        margin-bottom: 20px;
+    }
+
+    .workout-select {
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        width: 200px;
+    }
+
+    .workout-select:focus {
+        outline: none;
+        border-color: #5c9ead;
+        box-shadow: 0 0 5px #5c9ead;
+    }
+
+    .workoutpageImage1 {
+        width: 43%;
+        height: auto;
+        border-radius: 10px;
+        align-self: flex-start;
+        margin-left: 174px;
+    }
+
+    .workoutpageImage2 {
+        width: 38%;
+        height: auto;
+        border-radius: 10px;
+        align-self: flex-start;
+        margin-left: 174px;
+    }
+
+    .workoutpageImage3 {
+        width: 49%;
+        height: auto;
+        border-radius: 10px;
+        align-self: flex-start;
+        margin-left: 174px;
+    }
+
+    .workout-image-container {
+        position: relative;
+    }
+
+    .workout-image-overlay {
+        width: 160px;
+        position: absolute;
+        bottom: 50px;
+        left: -10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .workout-image-overlay2 {
+        width: 160px;
+        position: absolute;
+        bottom: 37px;
+        left: -10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .arrow {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .workout-image-overlay p {
+        margin: 0;
+    }
+    //workout list
+    .workout-list-p {
+        text: white;
+    }
+    //workout info page
+    .workout-info1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background-color: $main-color;
+        flex-direction: column;
+    }
+
+    .workout-container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .workout-box-main1 {
+        background-color: white;
+        color: blueviolet;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    .workout-image-container1 img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .workout-details1 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .workout-box1 {
+        flex: 1;
+        background-color: white;
+        color: blueviolet;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        margin-right: 10px;
+    }
+
+    .start-button1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .start-workout-button1 {
+        background-color: white;
+        border: none;
+        color: blueviolet;
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .workoutpageImage1_2 {
+        width: 43%;
+        height: auto;
+        border-radius: 10px;
+        align-self: flex-start;
+        margin-left: -8px;
+    }
+    //workout
+    .workout2 {
+        background-color: #273939;
+        padding: 20px;
+        min-height: 100vh;
+    }
+
+    .workout-item2 {
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .image-container2 {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .workout-image2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .description-container {
+        padding: 10px;
+        background-color: white;
+        position: relative;
+        z-index: 1;
+    }
+
+    .workout-description {
+        margin-top: 0;
+    }
+
+
+    .workout_title {
+        margin-top: 66px;
+    }
+
+    .loading-bar {
+        width: 100%;
+        height: 20px;
+        background-color: #273939;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+    }
+
+    .loading-bar-progress {
+        height: 100%;
+        background-color: #f2f2f2;
+        width: 0;
+        transition: width 0.3s;
+    }
+
+
+    @keyframes loading {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+    // Well-done
+    .well-done {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f1f1f1; /* Set your desired background color */
+    }
+
+    .well-done-text {
+        font-size: 48px; /* Adjust the font size as needed */
+        color: #333; /* Set your desired text color */
+        text-align: center;
+    }
     // NUTRITION PAGE
     .nutrition-page {
         display: flex;
@@ -552,43 +806,43 @@ $link-color: rgba(111, 205, 210, 0.637);
         }
     }
 
-        .meal-card {
-            background-color: white;
-            color: blueviolet;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-            margin-bottom: 10px;
-        }
-    
-        .meal-card:hover {
-            background-color: #f2f2f2;
-            cursor: pointer;
-        }
-    
-        .meal-card:active {
-            background-color: #d9d9d9;
-        }
-    
-    
-        .meal-link {
-            text-decoration: none;
-        }
-    
-        .meal-card-locked {
-            background-color: white;
-            color: darkgray;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-            margin-bottom: 10px;
-        }
-    
-    
+    .meal-card {
+        background-color: white;
+        color: blueviolet;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+        margin-bottom: 10px;
+    }
+
+    .meal-card:hover {
+        background-color: #f2f2f2;
+        cursor: pointer;
+    }
+
+    .meal-card:active {
+        background-color: #d9d9d9;
+    }
+
+
+    .meal-link {
+        text-decoration: none;
+    }
+
+    .meal-card-locked {
+        background-color: white;
+        color: darkgray;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+        margin-bottom: 10px;
+    }
+
+
 
     h2 {
         color: $text;
@@ -617,11 +871,10 @@ $link-color: rgba(111, 205, 210, 0.637);
         height: 100vh;
         background-color: $main-color;
         flex-direction: column;
-        color:$text;
+        color: $text;
     }
 
     .workout-image {
-       
         width: 172px;
         height: auto;
     }

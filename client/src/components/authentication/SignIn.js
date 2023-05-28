@@ -1,8 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-const SignIn = () => {
-    return(
+
+class SignIn extends Component {
+
+    render() {
+        return(
         <div className="auth">
             
             <form className="form">
@@ -10,7 +13,7 @@ const SignIn = () => {
                 <h6>Please sign in to continue:</h6>
                 <div>
                     <i className="fa fa-envelope" aria-hidden="true"></i>
-                    <input type="text" placeholder="username"/>
+                    <input type="text" placeholder="email"/>
                 </div>
 
                 <div>
@@ -29,7 +32,9 @@ const SignIn = () => {
                 </h6>
             </form>
         </div>
-    ) 
+        ) 
+    }
+    
 }
 
 export default SignIn

@@ -12,8 +12,7 @@ export const signup = async (req, res) => {
             firstName, 
             lastName, 
             email, 
-            password, 
-            workoutGroup
+            password
         } = req.body;
 
         /** We use the salt to encrypt the password */
@@ -24,8 +23,7 @@ export const signup = async (req, res) => {
             firstName, 
             lastName, 
             email, 
-            password: passwordHash, 
-            workoutGroup
+            password: passwordHash
         })
 
         const savedUser = await newUser.save();
