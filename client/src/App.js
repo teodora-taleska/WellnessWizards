@@ -135,8 +135,21 @@ const router = createBrowserRouter([
       },
       {
         path:'/my-plans-hp/connections',
-        element: <ConnectionsHP />
-      }
+        element: <ConnectionsHP />,
+      },
+        {
+            path: '/my-plans-hp/connections/personal-trainers',
+            element: <PersonalTrainers />
+          },
+          {
+            path: '/my-plans-hp/connections/physiotherapists',
+            element: <Physiotherapists />
+          },
+          {
+            path: '/my-plans-hp/connections/workout-buddies',
+            element: <WorkoutBuddies />
+          }
+      
     ]
   },
   // because the following 3 elements does not require a navbar
@@ -259,28 +272,7 @@ const router = createBrowserRouter([
       }
     ]
   },
-  {
-    path: '/connections',
-    element: <Connections/>,
-    children: [
-      {
-        path: '/connections',
-        element: <ConnectionsHP />
-      },
-      {
-        path: '/connections/personal-trainers',
-        element: <PersonalTrainers />
-      },
-      {
-        path: '/connections/physiotherapists',
-        element: <Physiotherapists />
-      },
-      {
-        path: '/connections/workout-buddies',
-        element: <WorkoutBuddies />
-      }
-    ]
-  }
+  
 ])
 
 

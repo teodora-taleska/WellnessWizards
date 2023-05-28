@@ -98,6 +98,16 @@ $link-color: rgba(111, 205, 210, 0.637);
                 text-shadow: 2px 2px 5px white;
             }
         }
+
+        /** CONNECTIONS */
+        .connections{
+            background-color: $main-color;
+            background-color: $main-color;
+            color: $text;
+            display: flex;
+            height: 100vh;
+            
+        }
     }
 
 }
