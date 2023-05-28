@@ -37,6 +37,9 @@ import Calendar from './components/myPlans/Calendar';
 import AnalyticsPage from './components/myPlans/AnalyticsPage';
 import WorkoutPage from './components/myPlans/WorkoutPage';
 import WorkoutInfo from './components/myPlans/WorkoutInfo';
+import WorkoutList from './components/myPlans/WorkoutsList';
+import WorkoutList2 from './components/myPlans/WorkoutList2';
+import WellDone from './components/myPlans/WellDone';
 import Workout from './components/myPlans/Workout';
 import NutritionPage from './components/myPlans/NutritionPage';
 import Recipe from './components/myPlans/Recipe';
@@ -136,14 +139,44 @@ const router = createBrowserRouter([
     ]
   },
   // because the following 3 elements does not require a navbar
-      {
-        path:'/my-plans-hp/workout-page/workout-info',
+    {
+        path: '/my-plans-hp/workout-page/workout-list/workout-info',
+        
         element: <WorkoutInfo />
-      },
-      {
-        path:'/my-plans-hp/workout-page/workout-info/workout',
+    },
+    {
+          
+          path: '/my-plans-hp/workout-page/workout-list2/workout-info',
+        element: <WorkoutInfo />
+    },
+    {
+        path: '/my-plans-hp/workout-page/workout-list2',
+        element: <WorkoutList2 />
+    },
+    {
+        path: '/my-plans-hp/workout-page/workout-list',
+        element: <WorkoutList />
+    },
+    {
+        path: '/my-plans-hp/workout-page/workout-list/workout-info/workout',
+
         element: <Workout />
-      },
+    },
+      {
+          path: '/my-plans-hp/workout-page/workout-list2/workout-info/workout',
+          
+        element: <Workout />
+    },
+    {
+        path: '/my-plans-hp/workout-page/workout-list/workout-info/workout/welldone',
+
+        element: <WellDone />
+    },
+    {
+        path: '/my-plans-hp/workout-page/workout-list2/workout-info/workout/welldone',
+
+        element: <WellDone />
+    },
       {
         path:'/my-plans-hp/nutrition-page/recipe/:id',
         element: <Recipe />
