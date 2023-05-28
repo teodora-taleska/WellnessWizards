@@ -53,6 +53,7 @@ import Home from './views/Home';
 import SubmitN from './components/nutritionPlanForm/Submit';
 import SubmitW from './components/workoutPlanForm/SubmitW';
 
+
 // React Router Dom Outlet 
 /*
  An <Outlet> should be used in parent route element to render
@@ -292,7 +293,8 @@ function App() {
   return (
     <div className="app">
       <div className='container'>
-        <RouterProvider router={router} />
+      <RouterProvider router={router} />
+        
       </div>
       
     </div>
