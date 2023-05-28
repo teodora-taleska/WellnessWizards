@@ -10,7 +10,7 @@ const Home = () => {
             <Link to='/my-plans-hp'><button>MY PLANS</button></Link>
             <Link to='/workout-plan-form'><button>NEW WORKOUT PLAN</button></Link>
             <Link to='/nutrition-plan-form'><button>NEW NUTRITION PLAN</button></Link>
-            <Link to='/connections'><button>CONNECTIONS</button></Link>
+            <Link to='/my-plans-hp/connections'><button>CONNECTIONS</button></Link>
             
         </div>
     ) 
