@@ -42,6 +42,7 @@ import WorkoutList2 from './components/myPlans/WorkoutList2';
 import WellDone from './components/myPlans/WellDone';
 import Workout from './components/myPlans/Workout';
 import NutritionPage from './components/myPlans/NutritionPage';
+import RecipeInfo from './components/myPlans/RecipeInfo';
 import Recipe from './components/myPlans/Recipe';
 import ConnectionsHP from './views/ConnectionsHP';
 import CHeader from './components/connections/ConnectionsHeader';
@@ -177,8 +178,12 @@ const router = createBrowserRouter([
 
         element: <WellDone />
     },
+    {
+        path:'/my-plans-hp/nutrition-page/recipe-info',
+        element: <RecipeInfo />
+    },
       {
-        path:'/my-plans-hp/nutrition-page/recipe/:id',
+        path:'/my-plans-hp/nutrition-page/recipe-info/recipe',
         element: <Recipe />
       },
   {
