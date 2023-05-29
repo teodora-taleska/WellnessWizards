@@ -199,6 +199,7 @@ $link-color: rgba(111, 205, 210, 0.637);
                 align-items: center;
                 justify-content: center;
                 margin: 30px 0px;
+                text: $text
             }
 
             .weekday-label {
@@ -230,6 +231,77 @@ $link-color: rgba(111, 205, 210, 0.637);
             .current-date {
                 background-color: #68ab87;
                 color: white;
+            }
+
+            .additional-div.flex-container {
+                display: flex;
+                align-items: center;
+              }
+              
+            .additional-div.flex-container h2 {
+               margin-right: 10px;
+               color: #68ab87;
+            }
+              
+            .additional-div.flex-container img {
+                max-width: 200px; /* Increase the width as desired */
+                height: auto;
+                margin-left: auto; /* Move the image to the right */
+            }
+
+            .additional-div.grid-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 20px;
+              }
+              
+              .additional-div.grid-container a {
+                text-decoration: none; /* Remove underline from links */
+            }
+              
+            .additional-div.daily-workout {
+                background-color:  rgba(51, 102, 204, 0.57);
+                border-radius: 10px; /* Adjust the radius as desired */
+                overflow: hidden;
+                width: 150px; /* Adjust the width as desired */
+                height: 150px; /* Adjust the height as desired */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+              
+            .additional-div.meal-plan {
+                background-color: rgba(255, 153, 51, 0.734);
+                border-radius: 10px; /* Adjust the radius as desired */
+                overflow: hidden;
+                width: 150px; /* Adjust the width as desired */
+                height: 150px; /* Adjust the height as desired */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .additional-div.daily-workout a,
+            .additional-div.meal-plan a {
+                text-decoration: none; /* Remove underline from links */
+                color: white; /* Set the text color */
+                font-weight: bold; /* Set the font weight */
+            }
+
+            .motivational-quote {
+                width: 100%;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+              
+            .motivational-quote p {
+                text-align: center;
+                font-family:  sans-serif; /* Add your desired font name */
+                font-size: 24px; /* Adjust the font size as desired */
+                font-weight: bold;
+                color: #224432;
             }
         }
         // WORKOUT & NUTRITION PLAN FORM
@@ -982,6 +1054,19 @@ $link-color: rgba(111, 205, 210, 0.637);
         align-self: flex-start;
         margin-left: -8px;
       }
+      .additional-div.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.additional-div.flex-container h2 {
+  margin-right: 10px;
+}
+
+.additional-div.flex-container img {
+  max-width: 100px;
+  height: auto;
+}
     .workout {
         text-align: center;
         display: flex;
