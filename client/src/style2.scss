@@ -21,6 +21,46 @@ $link-color: rgba(111, 205, 210, 0.637);
             height: 100vh;
             background-color: $main-color;
 
+            
+
+            .popup{
+                font-size: 17px;
+                position: absolute;
+                background-color: rgba(35, 42, 37, 0.93);
+                width: 70%;
+                height: 40%;
+                color: white;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px rgb(22, 20, 20);
+                padding: 20px;
+                margin: 10px;
+            }
+
+            .fa-arrow-circle-right{
+                color: white;
+                position: absolute;
+                right: 20px;
+                top: 120px;
+                font-size: 35px;
+            }
+
+            .btn-close{
+                padding: 15px;
+                width: 100px;
+                position: absolute;
+                bottom: 30px;
+                right: 10%;
+            }
+
+            .cal{
+                border-radius: 10px;
+                box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.168);
+                width: 90%;
+                padding: 20px;
+            }
+
+           
+
             .calendar-header{
                 font-family: $heading;
                 font-size: 28px;
@@ -29,6 +69,9 @@ $link-color: rgba(111, 205, 210, 0.637);
                 top: -12px;
                 left: 45px;
             }
+
+            
+            
 
         }
 
@@ -54,6 +97,16 @@ $link-color: rgba(111, 205, 210, 0.637);
                 color: rgba(255, 255, 255, 0.708);
                 text-shadow: 2px 2px 5px white;
             }
+        }
+
+        /** CONNECTIONS */
+        .connections{
+            background-color: $main-color;
+            background-color: $main-color;
+            color: $text;
+            display: flex;
+            height: 100vh;
+            
         }
     }
 

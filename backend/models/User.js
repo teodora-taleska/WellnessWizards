@@ -27,12 +27,6 @@ const UserSchema = new mongoose.Schema(
             min:2, 
             max: 50
         },
-        workoutGroup: {
-            type: String, 
-            required: true, 
-            min: 5, 
-            max: 50
-        }
     },
     { timestamps: true }
 )

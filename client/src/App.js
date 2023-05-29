@@ -42,6 +42,7 @@ import WorkoutList2 from './components/myPlans/WorkoutList2';
 import WellDone from './components/myPlans/WellDone';
 import Workout from './components/myPlans/Workout';
 import NutritionPage from './components/myPlans/NutritionPage';
+import RecipeInfo from './components/myPlans/RecipeInfo';
 import Recipe from './components/myPlans/Recipe';
 import ConnectionsHP from './views/ConnectionsHP';
 import CHeader from './components/connections/ConnectionsHeader';
@@ -51,6 +52,7 @@ import WorkoutBuddies from './components/connections/WorkoutBuddies';
 import Home from './views/Home';
 import SubmitN from './components/nutritionPlanForm/Submit';
 import SubmitW from './components/workoutPlanForm/SubmitW';
+
 
 // React Router Dom Outlet 
 /*
@@ -134,8 +136,21 @@ const router = createBrowserRouter([
       },
       {
         path:'/my-plans-hp/connections',
-        element: <ConnectionsHP />
-      }
+        element: <ConnectionsHP />,
+      },
+        {
+            path: '/my-plans-hp/connections/personal-trainers',
+            element: <PersonalTrainers />
+          },
+          {
+            path: '/my-plans-hp/connections/physiotherapists',
+            element: <Physiotherapists />
+          },
+          {
+            path: '/my-plans-hp/connections/workout-buddies',
+            element: <WorkoutBuddies />
+          }
+      
     ]
   },
   // because the following 3 elements does not require a navbar
@@ -177,8 +192,12 @@ const router = createBrowserRouter([
 
         element: <WellDone />
     },
+    {
+        path:'/my-plans-hp/nutrition-page/recipe-info',
+        element: <RecipeInfo />
+    },
       {
-        path:'/my-plans-hp/nutrition-page/recipe/:id',
+        path:'/my-plans-hp/nutrition-page/recipe-info/recipe',
         element: <Recipe />
       },
   {
@@ -258,28 +277,7 @@ const router = createBrowserRouter([
       }
     ]
   },
-  {
-    path: '/connections',
-    element: <Connections/>,
-    children: [
-      {
-        path: '/connections',
-        element: <ConnectionsHP />
-      },
-      {
-        path: '/connections/personal-trainers',
-        element: <PersonalTrainers />
-      },
-      {
-        path: '/connections/physiotherapists',
-        element: <Physiotherapists />
-      },
-      {
-        path: '/connections/workout-buddies',
-        element: <WorkoutBuddies />
-      }
-    ]
-  }
+  
 ])
 
 
@@ -287,7 +285,8 @@ function App() {
   return (
     <div className="app">
       <div className='container'>
-        <RouterProvider router={router} />
+      <RouterProvider router={router} />
+        
       </div>
       
     </div>
