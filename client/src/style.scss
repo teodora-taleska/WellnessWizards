@@ -199,7 +199,7 @@ $link-color: rgba(111, 205, 210, 0.637);
                 align-items: center;
                 justify-content: center;
                 margin: 30px 0px;
-                text: $text
+                color: $text
             }
 
             .weekday-label {
@@ -708,7 +708,7 @@ $link-color: rgba(111, 205, 210, 0.637);
     }
     //workout list
     .workout-list-p {
-        text: white;
+        color: white;
     }
     //workout info page
     .workout-info1 {
@@ -1023,7 +1023,7 @@ $link-color: rgba(111, 205, 210, 0.637);
     .recipe {
         padding: 20px;
         background-color: $main-color;
-        text: $text;
+        color: $text;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
