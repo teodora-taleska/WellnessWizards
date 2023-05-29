@@ -22,7 +22,6 @@ const RecipePage = () => {
 
   return (
     <div className="recipe">
-        <Link to='my-plans-hp/nutrition-page/recipe-info/recipe'><button className="arrow">➤</button></Link>
       <h2>Vegan Crepes</h2>
       <div className='recipe-image-container1'>
         <img src={Meal} alt="Vegan Crepes" clasName="rimg1"/>
