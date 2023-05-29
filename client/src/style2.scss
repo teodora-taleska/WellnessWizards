@@ -106,7 +106,65 @@ $link-color: rgba(111, 205, 210, 0.637);
             color: $text;
             display: flex;
             height: 100vh;
-            
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+
+            .header{
+                position: absolute;
+                top:60px;
+                left: 30px;
+                font-size: 20px;
+                font-family: $heading;
+            } 
+            .search-bar{
+                position: absolute;
+                top:130px;
+                left: 30px;
+                height: 30px;
+
+                .input-place, .fa-search{
+                    padding: 8px;
+                    
+                }
+                .input-place{
+                    width: 230px;
+                }
+
+            }
+
+            .search-results{
+                position: absolute;
+                top:200px;
+                left: 30px;
+
+                .fa-calendar, .fa-comments-o{
+                    color:white;
+                    font-size: 20px;
+                    margin: 10px;
+                }
+            }
+
+            .calendar-popup{
+                position: absolute;
+                top:370px;
+                left: 5px;
+
+                .fa-arrow-circle-right{
+                        font-size: 20px;
+                        margin-left: 20px;
+                }
+            }
+
+            .popup{
+                .btn-close{
+                    padding: 15px;
+                    width: 100px;
+                    position: absolute;
+                    bottom: 0px;
+                    right: 0px;
+                }
+            }
         }
     }
 

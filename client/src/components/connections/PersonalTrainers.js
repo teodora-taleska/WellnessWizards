@@ -95,8 +95,8 @@ const PersonalTrainers = () => {
     <div className="popup-content">
         <h2>Selected Day: {formattedDate}</h2>
         <div>
-            <p className="name"> Workout for today: Quick and dynamic HIIT Workout</p>
-            <Link to='/my-plans-hp/workout-page/workout-list2/workout-info'><i  class="fa fa-arrow-circle-right" aria-hidden="true"></i></Link>
+            <p className="name"> 10:20 - Empty timeslot </p>
+            <i  class="fa fa-arrow-circle-right" aria-hidden="true"></i>
         </div>
         <div></div>
         

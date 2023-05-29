@@ -850,13 +850,15 @@ $link-color: rgba(111, 205, 210, 0.637);
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background-color: #f1f1f1; /* Set your desired background color */
+        background-color: #273939;
     }
 
     .well-done-text {
-        font-size: 48px; /* Adjust the font size as needed */
-        color: #333; /* Set your desired text color */
-        text-align: center;
+        font-family: Impact, sans-serif;
+        font-size: 48px;
+        color: white;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+        transform: skew(-10deg);
     }
     // NUTRITION PAGE
     .nutrition-page {
