@@ -14,12 +14,12 @@ const WorkoutInfo = () => {
                 </div>
                 <div className="workout-details1">
                     <div className="workout-box1">
-                        <h3>Details 1</h3>
-                        <p>Some text...</p>
+                        <h3>CALORIES BURNED:</h3>
+                        <p>500 kcal</p>
                     </div>
                     <div className="workout-box1">
-                        <h3>Details 2</h3>
-                        <p>Some text...</p>
+                        <h3>TIME:</h3>
+                        <p>30 min, 60s work, 20s break, no repeat</p>
                     </div>
                 </div>
                 <div className="start-button1">

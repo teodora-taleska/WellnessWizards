@@ -7,15 +7,15 @@ const Workout = () => {
     const workoutItems2 = [
         {
             imageUrl: workoutImage1,
-            description: "Description 1",
+            description: "4 sets of 10 jumping lundges",
         },
         {
             imageUrl: workoutImage2,
-            description: "Description 2",
+            description: "3 sets of 15 pull ups",
         },
         {
             imageUrl: workoutImage3,
-            description: "Description 3",
+            description: "4 sets of 10 deadlifts",
         },
         // Add more workout items as needed
     ];

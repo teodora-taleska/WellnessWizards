@@ -36,6 +36,7 @@ import AccountPage from './components/myPlans/AccountPage';
 import Calendar from './components/myPlans/Calendar';
 import AnalyticsPage from './components/myPlans/AnalyticsPage';
 import WorkoutPage from './components/myPlans/WorkoutPage';
+import AdvancedWorkout from './components/myPlans/AdvancedWorkout';
 import WorkoutInfo from './components/myPlans/WorkoutInfo';
 import WorkoutList from './components/myPlans/WorkoutsList';
 import WorkoutList2 from './components/myPlans/WorkoutList2';
@@ -129,7 +130,11 @@ const router = createBrowserRouter([
       {
         path:'/my-plans-hp/workout-page',
         element: <WorkoutPage />
-      },
+        },
+        {
+            path: '/my-plans-hp/workout-page/advanced-workout-page',
+            element: <AdvancedWorkout />
+        },
       {
         path:'/my-plans-hp/nutrition-page',
         element: <NutritionPage />
