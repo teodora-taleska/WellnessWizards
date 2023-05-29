@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Sprint from "../images/sprinting.png";
 const MyPlansHP = () => {
   const currentDate = new Date();
@@ -42,11 +43,11 @@ const MyPlansHP = () => {
         <img src={Sprint} alt="sprint icon" />
   	  </div>
       <div className="additional-div grid-container">
-        <div className="additional-div daily-workout">
-          <a href="/daily-workout">Go to Daily Workout</a>
+              <div className="additional-div daily-workout">
+                  <Link to="/my-plans-hp/workout-page">Go to Daily Workout</Link>
         </div>
         <div className="additional-div meal-plan">
-          <a href="/meal-plan">Go to Meal Plan</a>
+                  <Link to="/my-plans-hp/nutrition-page">Go to Meal Plan</Link>
         </div>
       </div>
       <div className="motivational-quote">

@@ -236,13 +236,13 @@ $link-color: rgba(111, 205, 210, 0.637);
             .additional-div.flex-container {
                 display: flex;
                 align-items: center;
-              }
-              
-            .additional-div.flex-container h2 {
-               margin-right: 10px;
-               color: #68ab87;
             }
-              
+
+            .additional-div.flex-container h2 {
+                margin-right: 10px;
+                color: #68ab87;
+            }
+
             .additional-div.flex-container img {
                 max-width: 200px; /* Increase the width as desired */
                 height: auto;
@@ -251,16 +251,16 @@ $link-color: rgba(111, 205, 210, 0.637);
 
             .additional-div.grid-container {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr 0fr;
                 grid-gap: 20px;
-              }
-              
-              .additional-div.grid-container a {
+            }
+
+            .additional-div.grid-container a {
                 text-decoration: none; /* Remove underline from links */
             }
-              
+
             .additional-div.daily-workout {
-                background-color:  rgba(51, 102, 204, 0.57);
+                background-color: rgba(51, 102, 204, 0.57);
                 border-radius: 10px; /* Adjust the radius as desired */
                 overflow: hidden;
                 width: 150px; /* Adjust the width as desired */
@@ -269,9 +269,17 @@ $link-color: rgba(111, 205, 210, 0.637);
                 justify-content: center;
                 align-items: center;
             }
-              
+
             .additional-div.meal-plan {
-                background-color: rgba(255, 153, 51, 0.734);
+                background-color: #68ab87;
+                border-radius: 10px;
+                overflow: hidden;
+                width: 150px;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                ;
                 border-radius: 10px; /* Adjust the radius as desired */
                 overflow: hidden;
                 width: 150px; /* Adjust the width as desired */
@@ -280,7 +288,7 @@ $link-color: rgba(111, 205, 210, 0.637);
                 justify-content: center;
                 align-items: center;
             }
-            
+
             .additional-div.daily-workout a,
             .additional-div.meal-plan a {
                 text-decoration: none; /* Remove underline from links */
@@ -295,13 +303,12 @@ $link-color: rgba(111, 205, 210, 0.637);
                 justify-content: center;
                 align-items: center;
             }
-              
+
             .motivational-quote p {
                 text-align: center;
-                font-family:  sans-serif; /* Add your desired font name */
-                font-size: 24px; /* Adjust the font size as desired */
+                font-size: 24px;
                 font-weight: bold;
-                color: #224432;
+                color: #68ab87;
             }
         }
         // WORKOUT & NUTRITION PLAN FORM
@@ -1020,53 +1027,56 @@ $link-color: rgba(111, 205, 210, 0.637);
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-      }
-      
-      .recipe h2 {
+    }
+
+    .recipe h2 {
         font-size: 24px;
         margin-bottom: 20px;
-      }
-      
-      .ingredient-list ul {
+    }
+
+    .ingredient-list ul {
         list-style-type: none;
         padding: 0;
-      }
-      
-      .ingredient-list label {
+    }
+
+    .ingredient-list label {
         display: block;
         margin-bottom: 5px;
-      }
+    }
 
-      .instructions {
+    .instructions {
         flex-grow: 1;
-      }
-      
-      .instructions ol {
+    }
+
+    .instructions ol {
         padding-left: 20px;
-      }
-      
-      .instructions ol li {
+    }
+
+    .instructions ol li {
         margin-bottom: 0px;
-      }
-      .rimg1 {
+    }
+
+    .rimg1 {
         height: auto;
         border-radius: 10px;
         align-self: flex-start;
         margin-left: -8px;
-      }
-      .additional-div.flex-container {
-  display: flex;
-  align-items: center;
-}
+    }
 
-.additional-div.flex-container h2 {
-  margin-right: 10px;
-}
+    .additional-div.flex-container {
+        display: flex;
+        align-items: center;
+    }
 
-.additional-div.flex-container img {
-  max-width: 100px;
-  height: auto;
-}
+    .additional-div.flex-container h2 {
+        margin-right: 10px;
+    }
+
+    .additional-div.flex-container img {
+        max-width: 100px;
+        height: auto;
+    }
+
     .workout {
         text-align: center;
         display: flex;
