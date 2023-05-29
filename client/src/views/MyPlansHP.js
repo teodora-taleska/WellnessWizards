@@ -1,5 +1,5 @@
 import React from "react";
-
+import Sprint from "../images/sprinting.png";
 const MyPlansHP = () => {
   const currentDate = new Date();
   const calendarItems = [];
@@ -37,7 +37,21 @@ const MyPlansHP = () => {
       <div className="calendar-row">
         {calendarItems}
       </div>
-      My plans HP
+      <div className="additional-div flex-container">
+        <h2>Daily Schedule</h2>
+        <img src={Sprint} alt="sprint icon" />
+  	  </div>
+      <div className="additional-div grid-container">
+        <div className="additional-div daily-workout">
+          <a href="/daily-workout">Go to Daily Workout</a>
+        </div>
+        <div className="additional-div meal-plan">
+          <a href="/meal-plan">Go to Meal Plan</a>
+        </div>
+      </div>
+      <div className="motivational-quote">
+        <p>One Day or Day 1. You decide!</p>
+      </div>
     </div>
   );
 };
