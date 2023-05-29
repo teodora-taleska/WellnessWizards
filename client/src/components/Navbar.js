@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="navbar-div">
             <div className="navbar">
        
-            <Link to="../my-plans-hp/analytics">
+            <Link to="../my-plans-hp/calendar">
                 <FontAwesomeIcon className="icon" icon={faLineChart} />
             </Link>
             <Link to="../my-plans-hp/workout-page">
