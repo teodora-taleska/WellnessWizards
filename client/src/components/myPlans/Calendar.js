@@ -1,81 +1,51 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
+import Calendar from 'react-calendar'
+import 'react-calendar/dist/Calendar.css';
 
-const Calendar = () => {
+function Calendarr(){
+    const [value, onChange] = useState(new Date());
+    const [selectedDay, setSelectedDay] = useState(null);
+    const [showPopup, setShowPopup] = useState(false);
+
+    const handleDayClick = (value) => {
+        setSelectedDay(value);
+        setShowPopup(true);
+    };
+
+    const closePopup = () => {
+        setShowPopup(false);
+    };
+
+    const formattedDate = selectedDay ? selectedDay.toDateString() : "";
+
+
     return(
         <div className="calendar">
             <div className="forms-header">
                 <Link to='/my-plans-hp'><i className="fa fa-long-arrow-left" aria-hidden="true"></i></Link>
                 <h4 className="calendar-header"></h4>
             </div>
-            <div className="calendar-body">
-                <div className="cal-header">
-                    <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-                    <h4>December 2022</h4>
-                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                </div>
-                <div className="days">
-                    <table>
-                        <tr>
-                            <th>Mon</th>
-                            <th>Tue</th>
-                            <th>Wed</th>
-                            <th>Thu</th>
-                            <th>Fri</th>
-                            <th>Sat</th>
-                            <th>Sun</th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th>1</th>
-                            <th>2</th>
-                            <th>3</th>
-                            <th>4</th>
-                        </tr>
-                        <tr>
-                            <th>5</th>
-                            <th>6</th>
-                            <th>7</th>
-                            <th>8</th>
-                            <th>9</th>
-                            <th>10</th>
-                            <th>11</th>
-                        </tr>
-                        <tr>
-                            <th>12</th>
-                            <th>13</th>
-                            <th>14</th>
-                            <th>15</th>
-                            <th>16</th>
-                            <th>17</th>
-                            <th>18</th>
-                        </tr>
-                        <tr>
-                            <th>19</th>
-                            <th>20</th>
-                            <th>21</th>
-                            <th>22</th>
-                            <th>23</th>
-                            <th>24</th>
-                            <th>25</th>
-                        </tr>
-                        <tr>
-                            <th>26</th>
-                            <th>27</th>
-                            <th>28</th>
-                            <th>29</th>
-                            <th>30</th>
-                            <th>31</th>
-                        </tr>
-                    </table>
-                </div>
+            <Calendar className="cal" onClickDay={handleDayClick} onChange={onChange} value={value} />
 
-            </div>
+            {showPopup && (
+                <div className="popup">
+                <div className="popup-content">
+                    <h2>Selected Day: {formattedDate}</h2>
+                    <div>
+                        <p className="name"> Workout for today: Quick and dynamic HIIT Workout</p>
+                        <Link to='/my-plans-hp/workout-page/workout-list2/workout-info'><i  class="fa fa-arrow-circle-right" aria-hidden="true"></i></Link>
+                    </div>
+                    <div></div>
+                    
+                    <button className="btn-close" onClick={closePopup}>Close</button>
+                </div>
+                </div>
+            )}
+           
             
         </div>
     ) 
 }
 
-export default Calendar
+export default Calendarr
