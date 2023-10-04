@@ -54,7 +54,7 @@ Navigate to the directory and proceed with the setup.
 
 ### Frontend Setup
 
-1. Navigate to the `frontend` folder.
+1. Navigate to the `client` folder.
 2. Install dependencies: `npm install`
 3. Start the frontend server: `npm start`
 
